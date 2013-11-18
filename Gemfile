@@ -40,7 +40,7 @@ group :test do
 	gem 'capybara'
 	gem 'guard'
 	gem 'guard-rspec'
-	gem 'guard-cucumber'
+	gem 'guard-cucumber', :require => false
 end
 
 # Use ActiveModel has_secure_password
