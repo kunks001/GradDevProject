@@ -36,11 +36,11 @@ end
 
 group :test do
 	gem 'rspec-rails'
-	gem 'cucumber-rails'
+	gem 'cucumber-rails', :require => false
 	gem 'capybara'
 	gem 'guard'
 	gem 'guard-rspec'
-	gem 'guard-cucumber', :require => false
+	gem 'guard-cucumber'
 end
 
 # Use ActiveModel has_secure_password
