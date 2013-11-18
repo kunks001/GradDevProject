@@ -7,6 +7,7 @@ describe User do
 	subject{user}
 
 	it { expect(user).to respond_to 'email' }
+	it { expect(user).to be_valid }
 
 	describe "email" do
 		
