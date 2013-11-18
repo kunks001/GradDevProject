@@ -1,0 +1,99 @@
+%h1 Have you got what it takes to Learn to Code?
+
+= render 'user_form'
+
+= form_tag("/results", method: "post")
+
+/  QUESTION 1
+  = label_tag(:q1, "Question 1: Attention to Detail")
+  = image_tag "Coding_AttentionToDetail.jpg", alt: "attenttion to detail", size: "50x20" 
+  %p{class: 'makers_bold'}
+    Which is the odd one out?
+  %p
+    Here we're testing for attention to detail... Look at the above pairs of text and let us know which one DOES NOT match it's partner
+  = check_box_tag(:a)
+  = label_tag(:a, "jkojaspfskaskf  -  jkojaspfskaskf") 
+  = check_box_tag(:b)
+  = label_tag(:b, "iqtgiwegasdio  -  iqtgiyegasdio")
+  = check_box_tag(:c)
+  = label_tag(:c, "qwjedasjasnbm  -  qwjedasjasnbm")
+  = check_box_tag(:d)
+  = label_tag(:d, "wyesdsdlxvc  -  wyesdsdlxvc")
+  = check_box_tag(:e)
+  = label_tag(:e, "jasbhuhoqhwlk  -  jasbhuhoqhwlko")
+  = check_box_tag(:f)
+  = label_tag(:f, "poanksdnuqwb  -  poanksdnuqwb")
+  
+/  QUESTION 2
+  = label_tag(:q2, "Question 2: Grid Matrix") 
+  = image_tag "grid.png", alt: "grid matrix", size: "50x20" 
+  %p{class: 'makers_bold'}
+    Follow the Instructions
+  %p
+    You start at E6, as shown, facing EAST. Move 3 steps forward, turn 90 Degrees Clockwise, move 2 steps forward, turn 270 degrees Anticlockwise, and move 3 steps forward. What are the co-ordinates for the square where you end up?
+  = check_box_tag(:a)
+  = label_tag(:a, "J4") 
+  = check_box_tag(:b)
+  = label_tag(:b, "E4")
+  = check_box_tag(:c)
+  = label_tag(:c, "E8")
+  = check_box_tag(:d)
+  = label_tag(:d, "J8")
+  
+/  QUESTION 3
+  = label_tag(:q3, "Question 3: Deduction") 
+  = image_tag "Dice_Own.jpg", alt: "pair of dice", size: "50x20" 
+  %p{class: 'makers_bold'} 
+    Two views of the same dice are shown above <span class = "required">*</span>
+  %p
+    How many points are there on the opposite side to the face containing 5 points?
+  = check_box_tag(:a)
+  = label_tag(:a, "1") 
+  = check_box_tag(:b)
+  = label_tag(:b, "2")
+  = check_box_tag(:c)
+  = label_tag(:c, "3")
+  = check_box_tag(:d)
+  = label_tag(:d, "4")
+  = check_box_tag(:e)
+  = label_tag(:e, "5")
+  = check_box_tag(:f)
+  = label_tag(:f, "6")
+
+  %p
+
+/  QUESTION 4
+  = label_tag(:q4, "Question 4: Logic") 
+  = image_tag "mango_2.jpg", alt: "pair of dice", size: "50x20" 
+   %p{class: 'makers_bold'} 
+    Statement: All Mangoes are golden in colour. No golden-coloured things are cheap <span class = "required">*</span>
+  %p
+    Conclusion: a) All mangoes are cheap, b)Golden coloured Mangoes are NOT cheap
+  = text_field_tag(:q4)
+
+  = check_box_tag(:a)
+  = label_tag(:a, "Only conclusion (a) follows") 
+  = check_box_tag(:b)
+  = label_tag(:b, "Only conclusion (b) follows")
+  = check_box_tag(:c)
+  = label_tag(:c, "Either (a) or (b) follows")
+  = check_box_tag(:d)
+  = label_tag(:d, "Neither (a) nor (b) follows")
+  = check_box_tag(:e)
+  = label_tag(:e, "Both (a) and (b) follow")
+
+/  QUESTION 5
+  = label_tag(:q5, "Question 5: Extrapolation - Alien Language") 
+  = image_tag "Extrapolation.jpg", alt: "pair of dice", size: "50x20" 
+   %p{class: 'makers_bold'} 
+   How would you make the word \"Ceiling Tile\"? <span class = "required">*</span>
+  = check_box_tag(:a)
+  = label_tag(:a, "gorbltusl") 
+  = check_box_tag(:b)
+  = label_tag(:b, "flurgorbl")
+  = check_box_tag(:c)
+  = label_tag(:c, "arthflur")
+  = check_box_tag(:d)
+  = label_tag(:d, "pixnarth")
+
+  = submit_tag("Submit") 
