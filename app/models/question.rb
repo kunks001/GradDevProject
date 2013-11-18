@@ -1,4 +1,7 @@
 class Question < ActiveRecord::Base
 	belongs_to :quiz
-	#has_many :anwers
+
+	validates :query, presence: true
+
+	has_many :answers
 end

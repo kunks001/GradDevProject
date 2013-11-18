@@ -1,15 +1,15 @@
 require 'spec_helper'
 
 describe Question do
-	let(:question) {Question.new(query:'New Question',correctness:boolean)}
+	let(:question) {Question.new(query:'New Question')}
   
   subject { question }
   	it { should belong_to(:quiz) }
-  	xit { should have_many(:answers) }
+  	it { should have_many(:answers) }
 
   	it'should not be valid without a title' do
-	  	question.query=''
-	  	expect(question.query).not_to be_nil
+	  	question.query = ''
+	  	expect(question).to_not be_valid
 		end
   
   	it'should be valid with a title' do
