@@ -41,6 +41,7 @@ group :test do
 	gem 'guard'
 	gem 'guard-rspec'
 	gem 'guard-cucumber'
+	gem "shoulda-matchers"
 end
 
 # Use ActiveModel has_secure_password
