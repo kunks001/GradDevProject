@@ -23,13 +23,13 @@ Embellish the 'Do You Have What it Takes Questionniare' for the Makers Academy w
 <h4>Contributors</h4>
 <li><a href="https://github.com/margOnline/">Margo Urey</a></li>
 <li><a href="https://github.com/kunks001">Srikanth Kunkulagunta</a></li>
-<li>Deniss Bohanovs</li>
-<li>Sam Harrison</li>
-<li>Josh Hill</li>
-<li>Xiaoting Wright</li>
-<li>Jon Tsang</li>
+<li><a href="https://github.com/violentr">Deniss Bohanovs</a></li>
+<li><a href="https://github.com/Harrisam/">Sam Harrison</a></li>
+<li><a href="https://github.com/jamesjoshuahill">Josh Hill</a></li>
+<li><a href ="https://github.com/Ting0807">Xiaoting Wright</a></li>
+<li><a href="https://github.com/chewymeister/">Jon Tsang</a></li>
 <h4>Extensions</h4>
 <li>Provide extension questions</li>
-<li>Ability to edit/delete restaurants and reviews</li>
-<li>Display an average score for a restaurant based on all of its ratings</li>
+<li>Pinterest API</li>
+<li>Display statistics re questionnaire and results</li>
 </ul>
