@@ -1,5 +1,6 @@
 class Question < ActiveRecord::Base
 	belongs_to :quiz
+  has_many :answers
 
 	validates :query, presence: true
 
@@ -13,7 +14,7 @@ class Question < ActiveRecord::Base
     answers.find_by_correctness(true)
   end
 
-	has_many :answers
+	
 end
 
 

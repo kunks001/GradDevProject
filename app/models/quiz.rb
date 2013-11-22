@@ -5,7 +5,7 @@ class Quiz < ActiveRecord::Base
 	 validates :title, presence: true
 
   def populate(number_of_questions: 0, number_of_answers: 0)
-    number_of_questions = self.number_of_questions
+   
     number_of_questions.times do
       question = questions.build
       question.populate_answers(number_of_answers)
