@@ -1,6 +1,7 @@
 class Quiz < ActiveRecord::Base
 	has_many :questions
-	validates :title, :num_of_questions, presence: true
+  accepts_nested_attributes_for :questions, reject_if: ->(q) { q[:query].blank? }
+	validates :title, :number_of_questions, presence: true
 
 	 validates :title, presence: true
 
