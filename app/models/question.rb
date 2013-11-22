@@ -13,8 +13,6 @@ class Question < ActiveRecord::Base
   def correct_answer
     answers.find_by_correctness(true)
   end
-
-	
 end
 
 

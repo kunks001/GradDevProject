@@ -6,12 +6,10 @@ class QuizzesController < ApplicationController
 
   def show
     @quiz = Quiz.find(params[:id])
-    # redirect_to '/'
   end
 
   def new
     @quiz = Quiz.new
-    @quiz.questions.build
     @quiz.populate(number_of_questions: 5, number_of_answers: 4)
   end
 
