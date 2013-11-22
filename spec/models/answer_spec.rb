@@ -14,7 +14,7 @@ describe Answer do
 		it 'does not belong to a question' do
 			answer.question_id = ''
 			answer.should_not be_valid
-		end
+		end	
 
 	end
 

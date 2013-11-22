@@ -17,5 +17,12 @@ describe Quiz do
 
   	end
 
+    it 'with an invalid number of questions' do
+
+      quiz.number_of_questions = ''
+      expect(quiz).to_not be_valid
+
+    end
+
   end
 end

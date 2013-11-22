@@ -18,7 +18,7 @@ describe 'the quizzes section' do
   describe '/quizzes/:id' do
     it 'has its own page' do
       visit '/quizzes'
-      click_link 'Some quiz'
+      click_link 'My quiz'
 
       expect(page).to have_css 'h1', text: 'My quiz'
     end
