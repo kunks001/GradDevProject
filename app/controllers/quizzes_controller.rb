@@ -12,7 +12,7 @@ class QuizzesController < ApplicationController
   def new
     @quiz = Quiz.new
     @quiz.questions.build
-    @quiz.populate(params[:number_of_questions], number_of_answers: 4)
+    @quiz.populate(number_of_questions: 5, number_of_answers: 4)
   end
 
   def create

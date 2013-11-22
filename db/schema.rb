@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20131118143341) do
     t.datetime "updated_at"
     t.integer  "quiz_id"
     t.text     "query"
+    t.boolean  "correctness"
   end
 
   create_table "quizzes", force: true do |t|
