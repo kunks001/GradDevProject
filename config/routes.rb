@@ -14,6 +14,8 @@ GradDevProject::Application.routes.draw do
   end
   root :to => "quizzes#index"
 
+  match '/delete_quiz', to: 'quizzes#destroy', via: 'delete'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
