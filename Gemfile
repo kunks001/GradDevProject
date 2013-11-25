@@ -43,6 +43,7 @@ group :test do
 	gem 'guard-cucumber'
 	gem "shoulda-matchers"
 	gem 'factory_girl_rails'
+	gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password

@@ -1,28 +1,27 @@
+# require 'spec_helper'
+
+# describe Quiz do
+# 	let (:quiz) { Quiz.new(title: "Makers Quiz") }
+
+#   subject { quiz }
+
+#   it { should respond_to(:title) }
+#   it { should have_many(:questions) }
+
+#   describe 'a quiz is valid when'
+#   end
+# end
+
 require 'spec_helper'
 
 describe Quiz do
-	let (:quiz) { Quiz.new(title: "Makers Quiz") }
-
+  let(:quiz) { FactoryGirl.create :quiz}
   subject { quiz }
 
   it { should respond_to(:title) }
   it { should have_many(:questions) }
 
-  context 'should not be valid' do
-
-  	it 'with an invalid title' do
-
-  		quiz.title = ''
-  		expect(quiz).to_not be_valid
-
-  	end
-
-    it 'with an invalid number of questions' do
-
-      quiz.number_of_questions = ''
-      expect(quiz).to_not be_valid
-
-    end
+  context "when user_id is not present" do
 
   end
 end

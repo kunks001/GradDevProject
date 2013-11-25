@@ -12,5 +12,4 @@ class AttemptsController < ApplicationController
     final_score = scorer.total(answer_ids)
     render text: "#{final_score}%"
   end
-
 end
