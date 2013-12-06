@@ -22,6 +22,6 @@ describe Quiz do
   it { should have_many(:questions) }
 
   context "when user_id is not present" do
-
+    
   end
 end
