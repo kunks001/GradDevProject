@@ -33,17 +33,6 @@ describe 'Quizzes' do
       expect(current_url).to eq url_for(Quiz.last)
       expect(page).to have_content 'Brand new quiz'
     end
-
-    it 'A title and a question are provided' do
-      visit '/quizzes/new'
-
-      fill_in 'Title', with: 'Quiz title'
-      fill_in 'Question 1', with: 'What is your name?'
-      click_button 'Create Quiz'
-
-      expect(page).to have_content 'What is your name?'
-      expect(Quiz.last.questions).not_to be_empty
-    end
   end 
 
   context 'A quiz is not valid when' do
