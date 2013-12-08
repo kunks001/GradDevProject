@@ -9,8 +9,8 @@ GradDevProject::Application.routes.draw do
   resources :quizzes do
     resources :attempts, only: [:new, :create, :show]
     resources :questions do
-        resources :answers
-      end
+      resources :answers
+    end
   end
   root :to => "quizzes#index"
 

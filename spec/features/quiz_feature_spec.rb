@@ -1,6 +1,6 @@
 require 'spec_helper'
 describe 'Quizzes' do
-  let!(:quiz) { FactoryGirl.create (:quiz) }
+  let!(:quiz) { FactoryGirl.create(:quiz) }
 
   describe 'When the user visits the homepage' do
     it 'the user should see a list of quiz titles' do

@@ -1,11 +1,4 @@
 <h1><%= @quiz.title %></h1>
-<% @quiz.questions.each do |question| %>
-  <h3><%= question.query %></h3>
 
-  <ol class='answers'>
-  <% question.answers.each do |answer| %>
-    <%= content_tag :li, answer.response %>
-  <% end %>
-  </ol>
-<% end %>
+<%= link_to "Play quiz", new_quiz_attempt_path(@quiz)%>
 
