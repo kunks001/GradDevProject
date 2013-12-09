@@ -1,7 +1,7 @@
-<% n = 0 %>
+<% n = 1 %>
 <%= f.fields_for :questions do |question_f| %>
   
-  <fieldset>
+  <fieldset id="question_<%= n %>">
 
     <%= question_f.label :query, "Question #{n}" %>
 
@@ -11,4 +11,4 @@
     <% n += 1 %>
   </fieldset>
 
-<% end %>
+<% end %> 

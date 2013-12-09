@@ -2,3 +2,9 @@
 
 <%= link_to "Play quiz", new_quiz_attempt_path(@quiz)%>
 
+<% @quiz.questions.each do |question| %>
+  <%= question.query %>
+  <% question.answers.each do |answer| %>
+    <%= answer.response %>
+  <% end %>
+<% end %>
