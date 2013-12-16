@@ -9,9 +9,5 @@ Feature: Admin user is able to create a new quiz that contains questions and ans
     | Answers    | London                     | Paris | Berlin | Rome  |
     | Correct?   | true                       | false | false  | false |
 
-    
     Then the number of quizzes will go up by one
-    And the user will be able to see the title "Test" on the root page.
-
-
-  
+    And the user will be able to see the title "Test" and the question "What is capital of England?" on the root page.
