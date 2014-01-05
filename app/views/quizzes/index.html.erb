@@ -1,6 +1,7 @@
 <% @quizzes.each do |quiz| %>
   <h3><%= link_to quiz.title, quiz_path(quiz) %></h3>
   <%= link_to "Delete Quiz", delete_quiz_path(id: quiz.id), method: :delete %>
+  <%= link_to "Edit Quiz", edit_quiz_path(id: quiz.id) %>
 <% end %>
 
 <% if @quizzes.empty? %>
@@ -9,3 +10,5 @@
 <% else %>
   <%= link_to "Create a quiz", new_quiz_path %>
 <% end %>
+
+
